@@ -491,8 +491,15 @@ img, svg { image-rendering: pixelated; }
     aspect-ratio: 1152 / 768;   /* natural map proportions — no distortion */
   }
   /* keep object-fit:fill (base) so nodes stay aligned on the now-correct-aspect map */
-  /* the full-body guide overlay is too big on a phone — hide it here to keep the map usable */
-  .guide-map { display: none; }
+  /* keep the guide visible on mobile, but shrink it so it doesn't cover the map */
+  .guide-map { bottom: 0.8rem; left: 0.6rem; gap: 6px; }
+  .guide-map .avatar { height: clamp(78px, 22vw, 116px); }
+  .guide-map .bubble {
+    font-size: 0.85rem;
+    max-width: 54vw;
+    padding: 0.45rem 0.65rem;
+    line-height: 1.15;
+  }
   .node-label { font-size: 0.5rem; }
   .controls-hint { display: none; }   /* keyboard hints aren't useful on touch */
 }
