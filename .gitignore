@@ -1,0 +1,9 @@
+# Local build workshop — source images + deck build scripts (not deployed)
+decks/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Unused local backup
+img/avatar-badge-old.png
