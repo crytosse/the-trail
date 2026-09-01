@@ -473,6 +473,30 @@ img, svg { image-rendering: pixelated; }
 }
 .bubble.swap { opacity: 0; transform: translateY(5px); }
 
+/* ---- Mobile: don't vertically stretch the wide map; pan it horizontally instead ---- */
+@media (max-width: 700px) {
+  .world-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 0;
+  }
+  .world {
+    flex: 0 0 auto;
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1152 / 768;   /* natural map proportions — no distortion */
+  }
+  /* keep object-fit:fill (base) so nodes stay aligned on the now-correct-aspect map */
+  /* the full-body guide overlay is too big on a phone — hide it here to keep the map usable */
+  .guide-map { display: none; }
+  .node-label { font-size: 0.5rem; }
+  .controls-hint { display: none; }   /* keyboard hints aren't useful on touch */
+}
+
 @media (max-width: 400px) {
   .guide-title { display: none; }  /* keep the phone-width title uncluttered */
 }
