@@ -343,6 +343,7 @@ const NODES = [
       body: "Have a story to tell or a project in mind? Reach out — happy to talk shop, gear, or the next expedition.",
       chips: ["Open to work"],
       features: [],
+      note: "Prefer to copy it? Alex@moliski.net",
       links: [
         { label: "EMAIL ▶", href: "mailto:Alex@moliski.net" },
         { label: "INSTAGRAM ▶", href: "https://instagram.com/alexmoliski" },
@@ -409,6 +410,7 @@ const SHORTCUT = {
       "Herd Hub — built a full internal platform solo with AI",
       "Original music released on Spotify",
     ],
+    note: "Prefer to copy it? Alex@moliski.net",
     links: [
       { label: "EMAIL ME ▶", href: "mailto:Alex@moliski.net" },
       { label: "LINKEDIN ▶", href: "https://www.linkedin.com/in/alexander-moliski/" },
