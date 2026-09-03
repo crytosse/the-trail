@@ -380,6 +380,23 @@ function backToTitle() {
 document.getElementById("start-btn").addEventListener("click", startTrail);
 document.getElementById("title-btn").addEventListener("click", backToTitle);
 
+/* Quick-contact card — reachable any time from the "SAY HI" button in the HUD,
+   so folks don't have to dig into a stop to find how to reach me. */
+const CONTACT = {
+  tag: "CONTACT",
+  title: "Say Hi &#128075;",
+  role: "Let's make something together",
+  body: "Got a project, a role, a question — or just want to talk shop? Email's the fastest way to reach me. I read every one.",
+  note: "Prefer to copy it? Alex@moliski.net",
+  links: [
+    { label: "EMAIL ME &#9654;", href: "mailto:Alex@moliski.net" },
+    { label: "LINKEDIN &#9654;", href: "https://www.linkedin.com/in/alexander-moliski/" },
+    { label: "INSTAGRAM &#9654;", href: "https://instagram.com/alexmoliski" },
+    { label: "YOUTUBE &#9654;", href: "https://www.youtube.com/@alexmoliski" },
+  ],
+};
+document.getElementById("sayhi-btn").addEventListener("click", () => openLevel(null, CONTACT));
+
 /* ------------------------------------------------------------
    4. THE OVERWORLD MAP
 ------------------------------------------------------------ */

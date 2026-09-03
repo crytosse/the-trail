@@ -260,6 +260,10 @@ img, svg { image-rendering: pixelated; }
   cursor: pointer;
 }
 .hud-btn:hover { color: var(--ink); background: var(--accent); border-color: var(--accent); }
+.hud-actions { display: flex; align-items: center; gap: 0.5rem; }
+/* "Say hi" is the one CTA in the bar — accent-filled so contact is easy to find */
+.hud-btn-cta { color: var(--ink); background: var(--accent); border-color: var(--accent); }
+.hud-btn-cta:hover { filter: brightness(1.12); background: var(--accent); color: var(--ink); }
 .hud-title {
   position: absolute;
   left: 50%; top: 50%;
