@@ -228,7 +228,7 @@ const NODES = [
         { num: "Dozens", label: "CHANNELS" },
         { num: "1", label: "CAREER-DEFINING CHAPTER" },
       ],
-      markersIntro: "Three trail markers along the way — each opens its own field guide:",
+      markersIntro: "Three markers along the way — each opens its own field guide:",
       markers: [
         { title: "STORIES", sub: "Email, film, social & the writing behind them", color: "#c0432f", href: "pdfs/The-Main-Quest-Stories.pdf?v=4" },
         { title: "IN THE WILD", sub: "Retail, print & the physical world", color: "#6fbf4a", href: "pdfs/The-Main-Quest-In-The-Wild.pdf?v=2" },
@@ -339,7 +339,7 @@ const NODES = [
     level: {
       tag: "CLOUDS OF CREATION · THE SUMMIT",
       title: "The Summit — say hi",
-      role: "Let's find the next trail",
+      role: "Let's find the next adventure",
       body: "Have a story to tell or a project in mind? Reach out — happy to talk shop, gear, or the next expedition.",
       chips: ["Open to work"],
       features: [],
@@ -414,7 +414,7 @@ const SHORTCUT = {
     tag: "IN A HURRY? · THE HIGH POINTS",
     title: "High Points",
     role: "The highlight reel — all in one place",
-    body: "Not in the mood for the whole trail? No worries. Here are the high points:",
+    body: "Not in the mood for the whole journey? No worries. Here are the high points:",
     chips: ["Backcountry", "Webby winner", "500M+ views", "Published author"],
     features: [
       "Editorial Manager at Backcountry — leading editorial across Backcountry, Competitive Cyclist & SteepAndCheap",
@@ -662,7 +662,7 @@ function rotateBubble(el, lines, ms, html) {
 
 // Map guide — idle lines rotate, but a per-stop "quip" can take over on arrival
 const MAP_GUIDE_LINES = [
-  "Follow the trail to get to know me!",
+  "Follow the path to get to know me!",
   "I grew up in PA, but spent a lot of time in Texas and Utah too!",
   "I'm always looking for my next adventure.",
   "Full disclosure. I used AI to help me make this project. Tryin' something new.",
@@ -695,8 +695,8 @@ if (mgBubble) {
 
 // Title guide — rotates through greetings (HTML for the first, styled line)
 rotateBubble(document.getElementById("title-bubble"), [
-  "&ldquo;The Trail&rdquo;<br><span>AKA my portfolio</span>",
-  "Go ahead, start the trail! Adventure starts one click.. er uh... step at a time.",
+  "&ldquo;My Journey&rdquo;<br><span>AKA: my portfolio!</span>",
+  "Go ahead, start the journey! Adventure starts one click.. er uh... step at a time.",
   "It's nice to meet you.",
   "Thanks for stopping by.",
 ], 16000, true);
