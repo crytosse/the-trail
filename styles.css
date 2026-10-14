@@ -578,6 +578,8 @@ img, svg { image-rendering: pixelated; }
 }
 .level-role { font-size: 1.3rem; color: var(--accent); margin: 0 0 1.1rem; }
 .level-body { font-size: 1.35rem; line-height: 1.35; color: #e7e2c8; margin: 0 0 1.2rem; }
+.level-body a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.level-body a:hover { color: #ffd37a; }
 .level-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 1.2rem; padding: 0; }
 .level-chips li {
   font-family: var(--font-ui);
